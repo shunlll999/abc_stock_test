@@ -1,0 +1,23 @@
+{
+  "name": "abc-stock-dev-test",
+  "version": "1.0.0",
+  "description": "The example code for test developer exprerince",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shunlll999/abc_stock_test.git"
+  },
+  "author": "wachiii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shunlll999/abc_stock_test/issues"
+  },
+  "homepage": "https://github.com/shunlll999/abc_stock_test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7"
+  }
+}
