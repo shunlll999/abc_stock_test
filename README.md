@@ -1,1 +1,1 @@
-echo "# abc_stock_test"
+echo "abc_stock_test"
