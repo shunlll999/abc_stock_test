@@ -37,13 +37,13 @@ gulp.task('server', () =>{
 	express = server.new(paths.destination);
 });
 
+gulp.task('reload', () =>{
+	livereload();
+});
+
 gulp.task('restart', () =>{
 
 	express.start.bind(express)();
-});
-
-gulp.task('reload', () =>{
-	livereload();
 });
 
 gulp.task('watch', () =>{
