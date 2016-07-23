@@ -27,12 +27,15 @@
     "gulp-shell": "^0.5.2",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.8",
+    "jade": "^1.11.0",
     "rimraf": "^2.5.3",
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
+    "ejs": "^2.4.2",
     "express": "^4.14.0",
+    "google-finance": "^0.1.4",
     "morgan": "^1.7.0",
     "multer": "^1.1.0"
   }

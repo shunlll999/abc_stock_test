@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include ./header %>
+</head>
+<body>
+	<div class="container-fluid navbar-inverse">        
+		<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">ABC Broker Inc.</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="col-sm-3 pull-right">
+            	<div class="nav navbar-nav navbar-form navbar-right">
+					<div class="input-group">
+						<input type="text" id="search-text" class="form-control" placeholder="Search for...">
+						<span class="input-group-btn">
+							<button class="btn btn-default go-btn" type="button">Go!</button>
+						</span>
+					</div>
+				</div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+    $(function(){
+    	$('.go-btn').click(onClickGo);
+    });
+
+
+    function onClickGo(e){
+    	console.log("Go!!!"+$("#search-text").val());
+    }
+
+    </script>
+
+</body>
+</html>

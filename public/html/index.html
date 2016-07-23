@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ABC STOCK - Home</title>
+    <link href="./../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="./../../css/bootstrap-datepicker3.min.css" rel="stylesheet">
+    <script src="./../../js/jquery-1.12.4.min.js"></script>
+ 	<script src="./../../js/bootstrap.min.js"></script>
+    <script src="./../../js/bootstrap-datepicker.min.js"></script>
+
+    
+
+</head>
+<body>
+	<div class="container-fluid navbar-inverse">        
+		<div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">ABC Broker Inc.</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">Find stock quotes</div>
+                <div class="col-xs-4">
+                    <div class="input-group date datepicker-btn">
+                        <input type="text" class="form-control from-date" placeholder="From date">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default go-btn" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                 <div class="form-group">
+                    <div class='input-group date datepicker-btn'>
+                        <input type='text' class="form-control to-date" placeholder="To date" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default go-btn" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+                        </span>
+                    </div>
+                </div>  
+
+                </div>
+                <div class="col-xs-4">
+                    
+                </div>
+                <div class="col-xs-8">
+                    <div class="input-group">
+                        <input type="text" id="find-text" class="form-control" placeholder="NASDAQ Quotes">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default go-btn" type="button">GO!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <script type="text/javascript">
+
+    $(function(){
+        $('.go-btn').click(onClickGo);
+
+        $('.datepicker-btn').datepicker({
+            format: "yyyy-mm-dd"
+        });  
+
+    });
+
+
+    function onClickGo(e){
+        
+        var quote       = $("#find-text").val();
+        var startDate   = ($(".from-date").val() != "")?$(".from-date").val():0;
+        var endDate     = ($(".to-date").val() != "")?$(".to-date").val():0;
+
+
+        if(quote!= ""){
+            window.location.href = "/getqoutes/"+quote+"/"+startDate+"/"+endDate;
+        }
+
+        
+    }
+
+    </script>
+
+</body>
+</html>

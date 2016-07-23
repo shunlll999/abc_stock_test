@@ -42,7 +42,6 @@ gulp.task('reload', () =>{
 });
 
 gulp.task('restart', () =>{
-
 	express.start.bind(express)();
 });
 
