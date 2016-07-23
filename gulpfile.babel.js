@@ -4,6 +4,7 @@ import rimraf				from 'rimraf';
 import run					from 'run-sequence';
 import watch				from 'gulp-watch';
 import server 				from 'gulp-live-server';
+import livereload			from 'gulp-livereload';
 
 const paths = {
 	js:['./src/**/*.js'],
@@ -41,9 +42,14 @@ gulp.task('restart', () =>{
 	express.start.bind(express)();
 });
 
+gulp.task('reload', () =>{
+	livereload();
+});
+
 gulp.task('watch', () =>{
 	return watch(paths.js, () =>{
 		gulp.start('build');
+		run('reload');
 	});
 });
 

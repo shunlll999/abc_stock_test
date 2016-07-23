@@ -1,7 +1,7 @@
-## ABC stock test
+# ABC stock test
 The example code for test developer exprerince
 
-# The Project using modules
+## The Project using modules
 - express
 - babel
 - multer

@@ -21,7 +21,6 @@ app.get('/hello', getroute.getsample );
 app.get('/add/:x/:y', getroute.add);
 
 
-
 var server = app.listen(app.get('port'), ()=>{
 	console.log('+---------------------------------------------------+');
 	console.log('+   Server listen port : '+server.address().port);

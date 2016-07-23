@@ -23,6 +23,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "gulp": "^3.9.1",
     "gulp-live-server": "0.0.30",
+    "gulp-livereload": "^3.8.1",
     "gulp-shell": "^0.5.2",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.8",
@@ -32,7 +33,6 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "gulp-livereload": "^3.8.1",
     "morgan": "^1.7.0",
     "multer": "^1.1.0"
   }
