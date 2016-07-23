@@ -1,9 +1,9 @@
-import gulp 	from 'gulp';
-import shell 	from 'gulp-shell';
-import rimraf	from 'rimraf';
-import run		from 'run-sequence';
-import watch	from 'gulp-watch';
-import server 	from 'gulp-live-server';
+import gulp 				from 'gulp';
+import shell 				from 'gulp-shell';
+import rimraf				from 'rimraf';
+import run					from 'run-sequence';
+import watch				from 'gulp-watch';
+import server 				from 'gulp-live-server';
 
 const paths = {
 	js:['./src/**/*.js'],
@@ -37,6 +37,7 @@ gulp.task('server', () =>{
 });
 
 gulp.task('restart', () =>{
+
 	express.start.bind(express)();
 });
 
@@ -45,9 +46,4 @@ gulp.task('watch', () =>{
 		gulp.start('build');
 	});
 });
-
-
-
-
-
 
