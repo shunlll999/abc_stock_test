@@ -20,6 +20,7 @@ Afther that install Sqlite3 and go to the next step.
 - gulp, gulp-shell, gulp-watch, gulp-live-server
 - rimraf
 
+
 My Dependencies module
 
 ```
@@ -51,12 +52,11 @@ My Dependencies module
 }
 ```
 
-### This project usu=ing port 3001
+### This project using port 3001
 ```
 http://localhost:3001
 ```
 You'll see the home and you can curl the finance data from NASDAG by google finance api
 ![ACB Stock Inc.](http://www.mx7.com/i/154/tEnpWo.png)
-
 
 
