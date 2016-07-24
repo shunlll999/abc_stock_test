@@ -14,6 +14,10 @@ The example code for test developer exprerince
 
 ## The step of my configure of the project
 the first step
-'''
+```
+git status
+git add
+git commit
+```
 	sudo npm install -g flow
-	'''
+
