@@ -51,7 +51,7 @@ My Dependencies module
   }
 }
 ```
-### After you clone this project into your machine, you'll need install the phe project by terminal
+##### After you clone this project into your machine, you'll need install the project by terminal
 
 ```
 npm install
