@@ -57,6 +57,5 @@ My Dependencies module
 http://localhost:3001
 ```
 You'll see the home and you can curl the finance data from NASDAG by google finance api
-<img src="http://www.mx7.com/i/154/tEnpWo.png">
-
+![alt tag](http://www.mx7.com/i/154/tEnpWo.png "ABC Stock Inc.( The example code for test developer exprerince )")
 
