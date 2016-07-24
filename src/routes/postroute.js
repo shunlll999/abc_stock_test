@@ -2,21 +2,6 @@ import googlefinance 		from 'google-finance';
 import utils				from '../utils/utils';
 import knexDB				from '../knexDB';
 
-
-
-exports.nasdaqNews = function (req,res){
-	
-	const symbol 		= 'NASDAQ:'+req.params.symbol;
-	googlefinance.companyNews({
-	  symbol:symbol
-	}, function (err, news) {
-		if( err )throw err;
-
-		res.send(news);
-	});
-
-}
-
 exports.nasdaqQuotes = function (req,res){
 	
 	const SYMBOL 		= 'NASDAQ:'+req.params.symbol;
@@ -30,11 +15,7 @@ exports.nasdaqQuotes = function (req,res){
 	}, function (err, quotes) {
 		if( err )throw err;
 
-		
-
 		var dataQuotes = [];
-
-    	
 		for( var index in quotes ){
     		var seperateFormatDate = quotes[index].date;
     		var formatDate = String(seperateFormatDate).split(" ");
@@ -49,12 +30,30 @@ exports.nasdaqQuotes = function (req,res){
     			symbol:quotes[index].symbol,
     		});
 		}
-		console.log(dataQuotes);
-		res.render('stock', { title:'Get Quotes', data:dataQuotes });
+		
+		res.json(dataQuotes);
+
 	});
 
 }
 
+exports.saveStock = function (req,res){
+	var stocks = req.body.stock;
+	knexDB.insert(stocks, function(symbol){
+		console.log("Save "+symbol+" complete");
+		res.send({success:true, result:String(symbol).split(":")[1]});
+	});
+}
 
+exports.getSaved = function(req, res){
+	knexDB.getSymbolSaved( function( symbols ){
+		res.json({ success:true, result:symbols });
+	});
+}
 
-
+exports.getFinanceDataSaved = function(req, res){
+	var symbol = 'NASDAQ:'+req.body.symbol;
+	knexDB.getQuoteBySymbol(symbol, function(data){
+		res.json(data);
+	});
+}
