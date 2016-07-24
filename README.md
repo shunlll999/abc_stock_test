@@ -51,6 +51,15 @@ My Dependencies module
   }
 }
 ```
+### After you clone this project into your machine, you'll need install the phe project by terminal
+
+```
+npm install
+```
+
+Bacause many modules on this project using are ignore by .gitignore, when I was configured this project. 
+
+
 
 ### This project using port 3001
 ```
