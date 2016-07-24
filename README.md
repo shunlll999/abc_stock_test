@@ -14,7 +14,7 @@ Afther that install Sqlite3 and go to the next step.
 - babel
 - morgan
 - ejs
-- googlefinance,
+- googlefinance
 - knex 
 - sqlite3
 - gulp, gulp-shell, gulp-watch, gulp-live-server
@@ -57,6 +57,6 @@ My Dependencies module
 http://localhost:3001
 ```
 You'll see the home and you can curl the finance data from NASDAG by google finance api
-![ACB Stock Inc.](http://www.mx7.com/i/154/tEnpWo.png)
+<img src="http://www.mx7.com/i/154/tEnpWo.png">
 
 
