@@ -58,5 +58,4 @@ http://localhost:3001
 ```
 You'll see the home and you can curl the finance data from NASDAG by google finance api
 
-![alt tag](http://www.mx7.com/i/b82/nzvvYE.png)
 
