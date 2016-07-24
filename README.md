@@ -60,7 +60,7 @@ You'll see the home and you can curl the finance data from NASDAG by google fina
 
 You can clone this project into you machine or download without git at link below.
 
-[a link](https://drive.google.com/folderview?id=0B5pNi9CGN65ieHQ4RVZmMGZtM28&usp=sharing)
+[https://drive.google.com/drive/folders/0B5pNi9CGN65ieHQ4RVZmMGZtM28](https://drive.google.com/folderview?id=0B5pNi9CGN65ieHQ4RVZmMGZtM28&usp=sharing)
 
 
 
