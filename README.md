@@ -1,5 +1,5 @@
-# ABC stock test
-The example code for test developer exprerince.
+# stock test
+The example code for developer practice.
 
 
 ### The step of my configure of the project 
@@ -16,7 +16,7 @@ Afther that install Sqlite3 and go to the next step.
 - ejs
 - googlefinance
 - knex 
-- sqlite3
+- sqlite3s
 - gulp, gulp-shell, gulp-watch, gulp-live-server
 - rimraf
 
@@ -71,7 +71,6 @@ You can clone this project into you machine or download without git at link belo
 
 [https://drive.google.com/drive/folders/0B5pNi9CGN65ieHQ4RVZmMGZtM28](https://drive.google.com/folderview?id=0B5pNi9CGN65ieHQ4RVZmMGZtM28&usp=sharing)
 
-###I wish, the project make you guys, let's decide to call me to next step interview.
 
 
 
