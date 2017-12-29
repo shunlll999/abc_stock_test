@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/shunlll999/abc_stock_test.git"
   },
-  "author": "wachiii",
+  "author": "Wachara Nilsonti",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shunlll999/abc_stock_test/issues"
@@ -38,6 +38,6 @@
     "google-finance": "^0.1.4",
     "knex": "^0.11.9",
     "morgan": "^1.7.0",
-    "sqlite3": "^3.1.4"
+    "sqlite3": "^3.1.13"
   }
 }
